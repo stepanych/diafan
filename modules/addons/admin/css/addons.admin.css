@@ -1,0 +1,371 @@
+.content > .error {
+	margin: 1em 0;
+}
+
+#check_update {
+	margin: 15px 0;
+}
+
+.clear {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.btn.btn_gray {
+	background: #e5e5e5;
+	padding-left: 17px;
+	padding-right: 17px;
+  color: #2e2e2e;
+}
+.btn.btn_gray:hover {
+	background-color: #c5c5c5;
+}
+
+.items_wrap {
+  position: relative;
+}
+.items_wrap .items_head {
+  display: block;
+  margin: 42px 0 20px;
+
+  font: 18px/34px ptsans;
+  vertical-align: middle;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+}
+.items_wrap .infofield {
+  overflow: hidden;
+  text-align: center;
+}
+.items_wrap .infofield span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.items_wrap .infofield:before,
+.items_wrap .infofield:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+  background-color: #d6d0d0;
+  position: relative;
+}
+.items_wrap .infofield:before {
+  margin-left: -100%;
+  left: -14px;
+}
+.items_wrap .infofield:after {
+  margin-right: -100%;
+  right: -14px;
+}
+.items_wrap .more {
+  text-align: center;
+}
+.items_wrap .btn_more {
+  margin: 14px 0 0 0;
+  min-width: 135px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+/* |===============| list stast |===============| */
+.list_catalog:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.list_catalog .item{
+	margin-right: -2px;
+	padding-right: 3px;
+	width: 33%;
+	float: left;
+}
+@media (min-width: 1640px) {
+  .list_catalog .item{
+  	width: 25%;
+  }
+}
+@media (max-width: 620px) {
+  .list_catalog .item{
+  	width: 50%;
+  }
+  .list_catalog .item a.action {
+      font-size: 12px;
+  }
+  .list_catalog .item .item__in .text.no_important{
+      display: none;
+  }
+  .list_catalog .item .item__in .item__seporator {
+      display: none;
+  }
+}
+.list_catalog .item__in > * {
+	display: inline-block;
+	height: initial;
+	vertical-align: top;
+}
+.list_catalog .item .text {
+  width: initial;
+  display: block;
+  height: initial;
+  height: 65px;
+  overflow: hidden;
+  max-width: 100%;
+}
+/*.list_catalog .item .text:hover {
+  max-height: initial;
+  background-color: #fff;
+  position: absolute;
+  overflow: visible;
+  z-index: 5;
+  min-height: 50px;
+}*/
+.list_catalog .item .item__in{
+	min-height: 350px;
+	display: block;
+}
+.list_catalog .item__in .checkbox{
+	height: 40px;
+}
+.list_catalog .item .image a{
+	display: block;
+}
+.list_catalog .item .btn{
+	margin-bottom: 5px;
+}
+.list_catalog .item .image {
+	height: 115px;
+	width: 115px;
+	max-width: 100%;
+}
+.list_catalog .item .image img{
+	display: block;
+	max-height: 100%;
+    width: 115px;
+    max-width: 100%;
+    height: auto;
+}
+.list_catalog .item .item__labels {
+	padding: 0px;
+    height: 5px;
+    margin: 0px;
+	width: 100%;
+	max-width: 100%;
+}
+.list_catalog .item a.action {
+	display: table-cell;
+	padding: 3px 7px 3px 7px;
+}
+.list_catalog .item a.action b {
+    font-size: 16px;
+}
+.list_catalog .item a.remove {
+	padding-left: 10px;
+}
+.list_catalog .item .item__adapt {
+	display: none;
+}
+.list_catalog .item_heading{
+	float: none;
+	display: none;
+}
+.list_catalog .item__ui{
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.list_catalog .item .item__in .name{
+  min-width: 99px;
+  max-height: 71px;
+  font-weight: 700;
+  overflow: hidden;
+  margin-left: 5px;
+  max-width: 100%;
+}
+.list_catalog .item .name .categories{
+	font-weight: 100;
+}
+.list_catalog .item .author{
+	max-height: 24px;
+    overflow: hidden;
+	margin-left: 5px;
+	max-width: 100%;
+}
+.list_catalog .item .name a{
+	overflow: hidden;
+	max-height: 44px;
+}
+.list_catalog .item .action .btn{
+	margin: 5px 0 5px 5px;
+}
+.list_catalog .item .action .action{
+	margin: 5px 0 0 0;
+	white-space: nowrap;
+}
+/* |===============| list end |===============| */
+
+/* |===============| list grid start |===============| */
+.items.grid {
+	display: flex;
+	flex-flow: row wrap;
+}
+.items.grid .item {
+	flex: 0 0 250px;
+}
+.items.grid > .clear {
+	flex: 1 1 100%;
+	min-width: 100%;
+}
+/* |===============| list grid end |===============| */
+
+/* |===============| list list_addonss start |===============| */
+.list_addonss .important {
+	color: #ed1c24;
+	font-weight: bold;
+}
+
+.list_addonss .item {
+	width: 100%;
+	height: auto;
+	float: none;
+	padding: 0;
+	margin: 5px;
+}
+.list_addonss .item.item_disable:not([selected]) {
+  opacity: 1; /*opacity: 0.6;*/
+}
+.list_addonss .item.item_disable[selected] {
+  opacity: 1; /*opacity: 0.6;*/
+  background: #ffffff;
+}
+.list_addonss .item.item_disable[selected] .item__in {
+  background-color: rgba(245, 243, 243, .4);
+}
+.list_addonss .item .item__in {
+  display: block;
+  margin: 0px;
+  min-height: 373px;
+}
+.list_addonss .item__in > div {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.list_addonss .item .image {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.list_addonss .image img {
+	background: #ffffff;
+}
+.list_addonss .item .image a {
+	display: inline-block;
+}
+
+.list_addonss .item .item__labels {}
+.list_addonss .item .addon_update {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.list_addonss .item .addon_update .fa {
+  font-size: 24px;
+}
+.list_addonss .item .addon_update[disabled] {
+  background: transparent;
+  color: #bbc3c6;
+}
+
+.list_addonss .item .item__in .name {
+  min-width: inherit;
+  min-height: 48px;
+  max-height: 48px;
+  overflow: hidden;
+  max-width: inherit;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+}
+.list_addonss .item .item__in .name a {
+  color: #2e2e2e;
+  overflow: inherit;
+  max-height: inherit;
+}
+
+.list_addonss .item .categories_list {
+  min-height: 60px;
+  max-height: 60px;
+  overflow: hidden;
+  padding: 4px 6px 4px 4px;
+  margin-left: 5px;
+}
+.list_addonss .item .categories a {
+	display: block;
+	font-size: 12px;
+	color: #889397;
+	word-break: normal;
+	line-height: 17px;
+}
+
+.list_addonss .item__in > .action {
+  margin: 0 0 0 0;
+  padding: 0 10px;
+  min-height: 142px;
+	margin-bottom: 16px;
+}
+.list_addonss .item a.action {
+    display: inline-block;
+}
+.list_addonss .item a.action.btn_gray {
+  color: #2e2e2e;
+}
+
+.list_addonss .item .subscription {
+  font-size: 12px;
+  line-height: 17px;
+  min-height: 34px;
+  max-height: 34px;
+  overflow: hidden;
+}
+
+.list_addonss .item .price_list {
+  min-height: 76px;
+  max-height: 76px;
+  overflow: hidden;
+
+  margin: 35px 0 0 0;
+}
+.list_addonss .item .subscription ~ .price_list {
+  margin: 0;
+}
+.list_addonss .item a.btn_buy,
+.list_addonss .item a.btn_subscription {
+	display: block;
+  color: #fff;
+  white-space: nowrap;
+  padding: 10px 5px;
+  min-width: 98px;
+}
+
+.list_addonss .item .act_list {
+  min-height: 31px;
+  max-height: 31px;
+  overflow: hidden;
+}
+.list_addonss .item a.remove {
+  position: absolute;
+  right: 10px;
+}
+/* |===============| list list_addonss end |===============| */

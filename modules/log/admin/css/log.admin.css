@@ -1,0 +1,16 @@
+.item .item__icon {
+  display: table-cell;
+  text-align: center;
+  padding: 7px 0 0;
+  width: 29px;
+  /*color: #ed1c24;*/
+  color: #ff4a0b;
+}
+
+#initialization table td {
+  padding: 5px;
+}
+
+#message pre {
+  overflow: auto;
+}

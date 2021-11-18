@@ -1,0 +1,90 @@
+pre.code.bash {
+	margin-top: .83em;
+	padding: .5em;
+	border: 1px dashed #aea79f;
+	color: #333;
+	overflow: auto;
+	background-color: #fff;
+	max-height: 250px;
+}
+
+table.inline {
+	background-color: #fff;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+table.inline th {
+	padding: 3px 4px;
+	border: 1px solid #ccc;
+	background-color: #f5f3f3;
+}
+table.inline td {
+	padding: 3px 4px;
+	border: 1px solid #ccc;
+}
+
+/* скрываем чекбоксы и блоки с содержанием */
+.helper .checkbox {
+	display: none;
+}
+.helper .checkbox + label ~ div{
+	display: none;
+}
+/* оформляем текст label */
+.helper .checkbox + label {
+	padding: 2px 17px 1px;
+}
+/* вид текста label при активном переключателе */
+.helper .checkbox:checked + label {
+	background: #889397;
+	background-image: none;
+}
+.helper .checkbox:checked + label:hover {
+	background: #2e2e2e;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.helper .checkbox:checked + label + div {
+	display: block;
+	padding: 10px;
+	color: #2e2e2e;
+	background: #f5f3f3;
+	margin-top: 5px;
+	overflow: auto;
+	max-height: 450px;
+	width: 100%;
+	word-wrap: break-word;
+	zoom: .9;
+}
+
+.head-box .switch{
+	width: 36px;
+}
+.head-box .fa{
+	font-size: 14px;
+}
+.head-box .switch[switch="off"] .fa-toggle-on:before{
+	content: "\f204";
+}
+.head-box .switch > i,
+.head-box .switch:hover > i{
+	color: #39b54a;
+}
+.head-box .switch:hover{
+	opacity: 0.7;
+}
+.head-box .switch > span{
+	color: #2e2e2e;
+}
+.head-box .switch.disable{
+	background: transparent;
+}
+.head-box .switch.disable > i,
+.head-box .switch.disable:hover > i,
+.head-box .switch.disable > span{
+	color: #bbc3c6;
+}
+.head-box .switch > i,
+.head-box .switch > span,
+.head-box .switch > .spinner{
+	vertical-align: middle;
+}

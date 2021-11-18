@@ -1,0 +1,64 @@
+.red_text, .orange_text, .brown_text, .green_text, .blue_text{
+	font-weight: bold;
+}
+.red_text{
+	color:#D54640;
+}
+.orange_text{
+	color:#F49D10;
+}
+.brown_text{
+	color:#A6AEB0;
+}
+.green_text{
+	color:#8AC73C;
+	/*color: #39b54a;*/
+}
+.blue_text{
+	color: #1085bf;
+}
+
+.executable_stat {
+	float: right;
+	padding: 8px 0px;
+}
+
+.item .break, .item .break:hover {
+	color: #F49D10;
+}
+.item .reexecute, .item .reexecute:hover {
+	color: #1b9ada;
+}
+
+/* скрываем чекбоксы и блоки с содержанием */
+.helper .checkbox {
+	display: none;
+}
+.helper .checkbox + label ~ div{
+	display: none;
+}
+/* оформляем текст label */
+.helper .checkbox + label {
+	padding: 2px 17px 1px;
+}
+/* вид текста label при активном переключателе */
+.helper .checkbox:checked + label {
+	background: #889397;
+	background-image: none;
+}
+.helper .checkbox:checked + label:hover {
+	background: #2e2e2e;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.helper .checkbox:checked + label + div {
+	display: block;
+	padding: 10px;
+	color: #2e2e2e;
+	background: #f5f3f3;
+	margin-top: 5px;
+	overflow: auto;
+	max-height: 450px;
+	width: 100%;
+	word-wrap: break-word;
+	zoom: .9;
+}

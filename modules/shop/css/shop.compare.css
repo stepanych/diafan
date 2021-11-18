@@ -1,0 +1,64 @@
+/**
+ * Таблица стилей сравнения товаров
+ *
+ * @package    DIAFAN.CMS
+ * @author     diafan.ru
+ * @version    7.0
+ * @license    http://www.diafan.ru/license.html
+ * @copyright  Copyright (c) 2003-2018 OOO «Диафан» (http://www.diafan.ru/)
+ */
+
+
+
+ @media (min-width: 576px) {
+
+    .compare-d {
+        display: grid;
+        grid: 'params goods' / 20.83333rem minmax(0, 1fr);
+        gap: 2.5rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 820px), (min-width: 1024px) and (max-width: 1150px) {
+
+    .compare-d .offer-d__button_tocart .button-d__icon {
+        margin-right: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 820px), (min-width: 1024px) and (max-width: 1150px) {
+
+    .compare-d .offer-d__button_tocart .button-d__name {
+        display: none;
+    }
+}
+.compare-d__params {
+    display: none;
+    grid-area: params;
+}
+@media (min-width: 576px) {
+
+    .compare-d__params {
+        display: block;
+    }
+}
+.compare-d__goods {
+    grid-area: goods;
+}
+.param-d_compare {
+    padding: 0.25rem 0.41667rem;
+    border-radius: 0.25rem
+}
+.param-d_compare._diff {
+    background-color: #fef8f6;
+}
+.param-d_compare._colored { 
+    color: #fff;
+    background-color: #e55e34;
+}
+.param-d_compare._colored a:hover,
+.param-d_compare._colored a:focus,
+.param-d_compare._colored a:active {
+    color: inherit;
+}
+.param-d_compare + *:not(.param-d_compare) {
+    margin-top: 0.83333rem;
+}
